@@ -20,8 +20,6 @@ module Fastlane
         output = params[:output] || "/"
         github_access_token = params[:github_access_token] || ENV['GITHUB_ACCESS_TOKEN']
 
-        sh("cd ..")
-
         files.each do |file|
           generate_html(file, output, github_access_token)
         end
@@ -94,7 +92,8 @@ module Fastlane
 
         # Write to File
         outputFile = output[-1] == "/" ? output : "#{output}/"
-        File.open("#{output}#{fileName}.html", "w") do |f|
+        outputFile = outputFile.length == 1 ? "" : outputFile
+        File.open("#{outputFile}#{fileName}.html", "w") do |f|
           body = response.body
           f.write("<!DOCTYPE html> \n") unless body.include?("<!DOCTYPE html>")
           f.write(body)

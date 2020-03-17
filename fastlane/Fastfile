@@ -1,3 +1,6 @@
 lane :test do
+  markdown_to_html(files: ["README"])
   markdown_to_html(files: ["README.md"])
+  markdown_to_html(files: ["README"], output: "htmls")
+  markdown_to_html(files: ["README.md"], output: "htmls/")
 end
