@@ -9,7 +9,7 @@
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `markdown-to-html`, add it to your ***fastlane/Pluginfile***:
 
 ```bash
-gem "fastlane-plugin-markdown-to-html", git: "https://github.com/duyquang91/fastlane-plugin-markdown_to_html"
+gem "fastlane-plugin-markdown_to_html", git: "https://github.com/duyquang91/fastlane-plugin-markdown_to_html"
 ```
 Then install the plugin by this command:
 ```bash
