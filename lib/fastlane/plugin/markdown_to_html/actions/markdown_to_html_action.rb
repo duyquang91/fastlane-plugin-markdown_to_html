@@ -17,7 +17,7 @@ module Fastlane
       def self.run(params)
         # Variables
         files = params[:files]
-        output = params[:output] || ""
+        output = params[:output] || "/"
         github_access_token = params[:github_access_token] || ENV['GITHUB_ACCESS_TOKEN']
 
         sh("cd ..")
@@ -54,7 +54,7 @@ module Fastlane
                                description: "The output folder where generated html files would be saved",
                                   optional: true,
                                       type: String,
-                             default_value: ""),
+                             default_value: "/"),
           FastlaneCore::ConfigItem.new(key: :github_access_token,
                                   env_name: "GITHUB_ACCESS_TOKEN",
                                description: "Github Access Token to fetch the html from Github API",
