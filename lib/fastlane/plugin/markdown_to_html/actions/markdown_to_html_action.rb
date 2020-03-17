@@ -71,6 +71,7 @@ module Fastlane
 
       # Generating html from Github API
       def self.generate_html(file, output, github_access_token)
+        fileNamePath = File.dirname(file)
         fileName = file.include?(".md") ? file.delete_suffix!(".md") : file
         puts("Generating html file from #{fileName} ...")
         input = File.read("#{fileName}.md")
@@ -93,7 +94,8 @@ module Fastlane
         # Write to File
         outputFile = output[-1] == "/" ? output : "#{output}/"
         outputFile = outputFile.length == 1 ? "" : outputFile
-        File.open("#{outputFile}#{fileName}.html", "w") do |f|
+        htmlFile = outputFile == "" ? "#{fileName}.html" : "#{outputFile}#{File.basename(fileName)}.html"
+        File.open(htmlFile, "w") do |f|
           body = response.body
           f.write("<!DOCTYPE html> \n") unless body.include?("<!DOCTYPE html>")
           f.write(body)

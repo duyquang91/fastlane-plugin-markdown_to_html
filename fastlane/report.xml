@@ -5,22 +5,27 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: markdown_to_html" time="0.399512">
+      <testcase classname="fastlane.lanes" name="0: markdown_to_html" time="0.387225">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: markdown_to_html" time="0.444686">
+      <testcase classname="fastlane.lanes" name="1: markdown_to_html" time="0.48059">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: markdown_to_html" time="0.410348">
+      <testcase classname="fastlane.lanes" name="2: markdown_to_html" time="0.410357">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: markdown_to_html" time="0.408587">
+      <testcase classname="fastlane.lanes" name="3: markdown_to_html" time="0.404556">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: markdown_to_html" time="0.309764">
         
       </testcase>
     
