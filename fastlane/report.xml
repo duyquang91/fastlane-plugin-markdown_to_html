@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: markdown_to_html" time="0.554251">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
