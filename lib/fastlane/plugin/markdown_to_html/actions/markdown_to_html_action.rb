@@ -71,7 +71,7 @@ module Fastlane
 
       # Generating html from Github API
       def self.generate_html(file, output, github_access_token)
-        fileName = file.include?(".md") ? file.delete(".md") : file
+        fileName = file.include?(".md") ? file.delete_suffix!(".md") : file
         puts("Generating html file from #{fileName} ...")
         input = File.read("#{fileName}.md")
         input = input.to_json
