@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-markdown_to_html'
   spec.version       = Fastlane::MarkdownToHtml::VERSION
   spec.author        = 'Steve'
-  spec.email         = 'steve_dao@ntucenterprise.sg'
+  spec.email         = 'daoduyquang91@gmail.com'
 
   spec.summary       = 'This plugin convert a markdown file format to a html file format'
   spec.homepage      = "https://github.com/duyquang91/fastlane-plugin-markdown_to_html"
