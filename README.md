@@ -39,9 +39,9 @@ Example:
 ```bash
 markdown_to_html(files: ["README.md"], output: "htmls")
 ```
-> This plugin will run the command `cd ..` before accessing files.
-> Please be ensure that your output folder is exist.
-> If you don't pass the `output` option then all html files would be saved in the root folder of `files`
+> This plugin will run the command `cd ..` before accessing files.  
+Please be ensure that your output folder is exist.  
+If you don't pass the `output` option then all html files would be saved in the root folder of `files`
 
 ## Run tests for this plugin
 
