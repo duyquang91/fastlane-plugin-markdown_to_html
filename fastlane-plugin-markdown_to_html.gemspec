@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'steve_dao@ntucenterprise.sg'
 
   spec.summary       = 'This plugin convert a markdown file format to a html file format'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-markdown_to_html"
+  spec.homepage      = "https://github.com/duyquang91/fastlane-plugin-markdown_to_html"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
