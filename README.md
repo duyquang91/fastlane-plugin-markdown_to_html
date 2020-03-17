@@ -2,6 +2,8 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-markdown_to_html)
 
+![](header.png)
+
 ## Getting Started
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `markdown-to-html`, add it to your ***fastlane/Pluginfile***:
